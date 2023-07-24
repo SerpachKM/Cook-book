@@ -140,8 +140,9 @@ if __name__ == '__main__':
     print(cook_book)
     print('Задание 2')
     pprint(get_shop_list_by_dishes(dishes=['Запеченный картофель', 'Омлет'], person_count=2))
-
     time.sleep(2)
     print('Задание 3')
     rewrite_file()
-    
+    file = open(r"C:\Users\Professional\Desktop\Книга рецептов\sorted\rewrite_file.txt", 'r', encoding='utf-8')
+    print(file.read())
+    file.close()
